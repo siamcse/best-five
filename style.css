@@ -6,9 +6,7 @@ body{
 .fonts{
     font-family: 'Berkshire Swash';
 }
-main{
+main,footer{
     background: #151515;
 }
-footer{
-    background: #151515;
-}
+
