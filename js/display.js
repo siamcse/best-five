@@ -32,6 +32,7 @@ for(const btn of btns){
         btn.innerText = 'SELECTED';
         
         btn.disabled = true;
-        btn.style.textColor = 'white';
+        btn.style.backgroundColor = 'gray';
+        btn.style.color = 'white'
     })
 }
