@@ -10,7 +10,7 @@ function selectedPlayerDisplay(playerList){
         const ol = document.createElement('ol');
         ol.innerHTML = `
         <ol class="list-outside">
-            <li class="p-2">${i+1}. ${playerList[i]}</li>
+            <li class="md:p-2">${i+1}. ${playerList[i]}</li>
         </ol>
         `;
         selectedPlayer.appendChild(ol);
