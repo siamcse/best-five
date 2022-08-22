@@ -1,6 +1,7 @@
 const btns = document.getElementsByClassName('select-btn');
 const playerList = [];
 
+//select player display function
 function selectedPlayerDisplay(playerList){
     const selectedPlayer = document.getElementById('selected-player');
     selectedPlayer.innerHTML = '';
@@ -15,7 +16,7 @@ function selectedPlayerDisplay(playerList){
         selectedPlayer.appendChild(ol);
     }
 }
-
+//for each button select
 for(const btn of btns){
     btn.addEventListener('click',function(event){
 
