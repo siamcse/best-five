@@ -2,6 +2,7 @@ const btns = document.getElementsByClassName('select-btn');
 const playerList = [];
 
 //select player display function
+
 function selectedPlayerDisplay(playerList){
     const selectedPlayer = document.getElementById('selected-player');
     selectedPlayer.innerHTML = '';
