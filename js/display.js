@@ -28,5 +28,9 @@ for(const btn of btns){
         }
         playerList.push(playerName);
         selectedPlayerDisplay(playerList);
+        btn.innerText = 'SELECTED';
+        
+        btn.disabled = true;
+        btn.style.textColor = 'white';
     })
 }

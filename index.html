@@ -148,13 +148,7 @@
                             <h3 class="text-2xl text-center font-semibold">Selected-V</h3>
                             <img class="w-3/4 mx-auto mb-4" src="images/Ureg-Ureg Marker.png" alt="">
                             <div id="selected-player">
-                                <!-- <ol class="list-decimal list-outside py-4">
-                                    <li class="p-2">Neymar Jr</li>
-                                    <li class="p-2">Neymar Jr</li>
-                                    <li class="p-2">Neymar Jr</li>
-                                    <li class="p-2">Neymar Jr</li>
-                                    <li class="p-2">Neymar Jr</li>
-                                </ol> -->
+                                <!-- selected player added here  -->
                             </div>
                         </div>
                     </div>
@@ -164,18 +158,18 @@
                             <h3 class="text-2xl text-center font-semibold">Budget</h3>
                             <img class="w-3/4 mx-auto mb-4" src="images/Ureg-Ureg Marker.png" alt="">
                             <div>
-                                <p class="mb-4 flex justify-between">Per Player: <input  class="w-2/4 bg-black border ml-2 px-2 rounded" type="text"></p>
-                                <button class="btn bg-cyan-600 px-10 text-center ml-4 mb-6">Calculate</button>
+                                <p class="mb-4 flex justify-between">Per Player: <input id="player-cost"  class="w-2/4 bg-black border ml-2 px-2 rounded" type="text"></p>
+                                <button id="player-cost-btn" class="btn bg-cyan-600 px-10 text-center ml-4 mb-6">Calculate</button>
 
-                                <p>Player Expenses:  $<span>5000</span></p>
+                                <p>Player Expenses:  $<span id="total-player-cost">0</span></p>
 
-                                <p class="my-4 flex justify-between">Manager: <input class="w-2/4 bg-black border ml-2 px-2 rounded" type="text"></p>
-                                <p class="my-4 flex justify-between">Coach: <input class="w-2/4 bg-black border ml-2 px-4 rounded" type="text"></p>
+                                <p class="my-4 flex justify-between">Manager: <input id="manager-cost" class="w-2/4 bg-black border ml-2 px-2 rounded" type="text"></p>
+                                <p class="my-4 flex justify-between">Coach: <input id="coach-cost" class="w-2/4 bg-black border ml-2 px-4 rounded" type="text"></p>
 
-                                <button class="btn bg-cyan-600 px-10 text-center ml-4 mb-6">Calculate</button>
+                                <button id="total-cost-btn" class="btn bg-cyan-600 px-10 text-center ml-4 mb-6">Calculate</button>
                                 <div class="flex">
                                     <p>Total</p>
-                                    <p>$<span>11000</span></p>
+                                    <p>$<span id="total-cost">0</span></p>
                                 </div>
                             </div>
                             
@@ -192,5 +186,6 @@
         </div>
     </footer>
     <script src="js/display.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 </html>
