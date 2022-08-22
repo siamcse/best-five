@@ -21,7 +21,7 @@ document.getElementById('total-cost-btn').addEventListener('click', function(){
     const coachCostField = document.getElementById('coach-cost');
     const coachCost = parseFloat(coachCostField.value);
 
-    if(isNaN(managerCost || coachCost)){
+    if(isNaN(managerCost) || isNaN(coachCost)){
         alert("Please! Enter a number");
         return;
     }
